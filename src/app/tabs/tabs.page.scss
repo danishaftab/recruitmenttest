@@ -1,0 +1,14 @@
+.tabimg {
+  width: 30%;
+  opacity: 0.3;
+}
+.active {
+  opacity: 1;
+}
+ion-tab-button.tab-selected {
+  ion-icon,
+  ion-label {
+    color: #f05e00 !important;
+    --ion-color-base: #f05e00 !important;
+  }
+}

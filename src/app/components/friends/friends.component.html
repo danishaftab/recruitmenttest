@@ -1,0 +1,14 @@
+<div class="bg">
+  <ion-list>
+    <ion-item *ngFor="let x of friends">
+      <ion-avatar slot="start">
+        <img src="assets/images/avatar.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h2 class="username">{{ x.name }}</h2>
+        <p class="mb0">{{ x.email }}</p>
+        <p class="mb0">{{ x.phone }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</div>

@@ -1,0 +1,17 @@
+<div class="signup-center-div"></div>
+<ion-list class="wd100">
+  <div *ngFor="let x of feeds" class="tc">
+    <div class="card">
+      <ion-card class="m0">
+        <img class="cardimage" src="https://i.stack.imgur.com/y9DpT.jpg" />
+        <ion-card-content>
+          <span class="fl wd100">
+            <span class="card-head fs21">{{ x.title }}</span
+            ><br />
+            <span class="card-text">{{ x.body }}</span>
+          </span>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-list>

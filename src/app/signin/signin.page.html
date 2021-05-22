@@ -1,0 +1,73 @@
+<ion-content>
+  <div class="bg">
+    <div class="signup-center-div pd20">
+      <div class="logobox">
+        <div class="logo">
+          <ion-img class="logo-image" src="assets/images/logo.png"></ion-img>
+        </div>
+        <p class="signup-text">Login</p>
+      </div>
+      <form [formGroup]="formgroup" (ngSubmit)="submitForm()" novalidate>
+        <div>
+          <label class="item item-input item-stacked-label">
+            <input
+              formControlName="email"
+              class="bg-img email mylabel"
+              type="email"
+              placeholder="Email"
+            />
+          </label>
+          <ion-label
+            class="inputLabel validation validation-req-text-end"
+            *ngIf="email.hasError('required') && isSubmitted"
+            end
+            >Required*</ion-label
+          >
+          <ion-label
+            class="inputLabel validation validation-invalid-text-end"
+            *ngIf="email.hasError('pattern') && isSubmitted"
+            end
+            >Invalid email*</ion-label
+          >
+          <label class="item item-input item-stacked-label">
+            <input
+              formControlName="password"
+              class="bg-img pwd mylabel"
+              type="password"
+              placeholder="Password"
+            />
+          </label>
+          <ion-label
+            class="inputLabel validation validation-req-text-end mb3"
+            *ngIf="password.hasError('required') && isSubmitted"
+            end
+            >Required*</ion-label
+          >
+          <ion-label
+            class="inputLabel validation validation-req-text-end mb3"
+            *ngIf="password.hasError('minlength') && isSubmitted"
+            end
+            >Password must be atleast of 4 digits*</ion-label
+          >
+          <ion-label
+            class="inputLabel validation validation-req-text-end mb3"
+            *ngIf="password.hasError('maxlength') && isSubmitted"
+            end
+            >Password must be atmost of 8 digits*</ion-label
+          >
+        </div>
+
+        <div class="tc">
+          <span class="fr">Forgot Password?</span>
+        </div>
+
+        <button type="submit" class="subscribe-button" tappable>Sign In</button>
+      </form>
+    </div>
+  </div>
+</ion-content>
+<div class="bottom">
+  <div class="tc">
+    <span>Don't have an account ? <span class="register">Register</span></span>
+  </div>
+</div>

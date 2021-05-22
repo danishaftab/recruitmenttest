@@ -1,0 +1,113 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+ion-toolbar {
+  --background: #f05e00;
+  --color: white;
+}
+ion-header {
+  --background: #f05e00;
+  --color: white;
+}
+.flagmod {
+  .modal-wrapper {
+    z-index: 10;
+    height: 93% !important;
+    width: 94% !important;
+    margin: auto;
+    border: 3px solid black;
+    contain: strict;
+  }
+  ion-backdrop {
+    // height: 50%;
+    visibility: visible;
+    z-index: initial !important;
+  }
+}
+
+.filtermod {
+  .modal-wrapper {
+    z-index: 10;
+    height: 62% !important;
+    width: 94% !important;
+    margin: auto;
+    contain: strict;
+    border-radius: 15px;
+  }
+  ion-backdrop {
+    // height: 50%;
+    visibility: visible;
+    z-index: initial !important;
+  }
+}
+
+.categorymod {
+  .modal-wrapper {
+    z-index: 10;
+    height: 68% !important;
+    width: 94% !important;
+    margin: auto;
+    contain: strict;
+    border-radius: 15px;
+  }
+  ion-backdrop {
+    // height: 50%;
+    visibility: visible;
+    z-index: initial !important;
+  }
+}
+
+.comingsoonmod {
+  .modal-wrapper {
+    z-index: 10;
+    height: 39% !important;
+    width: 65% !important;
+    margin: auto;
+    contain: strict;
+    border-radius: 12px;
+  }
+  ion-backdrop {
+    // height: 50%;
+    visibility: visible;
+    z-index: initial !important;
+  }
+}
+:host {
+  padding-left: unset;
+  padding-right: unset;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+.alert-radio-label.sc-ion-alert-md {
+  padding-left: 0px;
+  padding-right: unset;
+  -webkit-padding-start: 35px !important;
+  padding-inline-start: 35px !important;
+  -webkit-padding-end: 20px !important;
+  padding-inline-end: 20px !important;
+  font-size: 14px !important;
+}
